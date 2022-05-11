@@ -30,9 +30,16 @@ stock:11,
 colors:["black","grey","green"],
 sizes:["S","M","L","XL","XXL"],
 hot:false,
-grey:"https://woodmart.xtemos.com/wp-content/uploads/2017/03/light10_4-430x490.jpg"    ,
-black:"https://woodmart.xtemos.com/wp-content/uploads/2017/03/light10_3-430x490.jpg"    ,
-green:"https://woodmart.xtemos.com/wp-content/uploads/2017/03/light10_1-430x490.jpg"    ,
+images:{
+
+
+
+     grey:"https://woodmart.xtemos.com/wp-content/uploads/2017/03/light10_4-430x490.jpg"    ,
+black:"https://woodmart.xtemos.com/wp-content/uploads/2017/03/light10_3-430x490.jpg"  ,
+green:"https://woodmart.xtemos.com/wp-content/uploads/2017/03/light10_1-430x490.jpg"   ,
+
+},
+
 
 
 },
@@ -66,9 +73,10 @@ colors:["black","beige"],
 stock:34,
 sizes:["S","M","L","XL","XXL"],
 hot:false,
-black:'https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-8-1-430x491.jpg'   ,
-beige:'https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-8-430x491.jpg'   ,
-
+images:{ 
+black:'https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-8-1-430x491.jpg'  ,
+beige:'https://woodmart.xtemos.com/wp-content/uploads/2016/08/product-accessories-8-430x491.jpg'  ,
+},
 
 },
 {
@@ -131,10 +139,12 @@ stock:32,
 hot:false,
 new:true,
 colors:["black","blue","grey"],
+
+images: { 
 black:'https://woodmart.xtemos.com/wp-content/uploads/2016/09/product-furniture-19-2-430x490.jpg',
 blue:'https://woodmart.xtemos.com/wp-content/uploads/2016/09/product-furniture-19-430x490.jpg',
 grey:'https://woodmart.xtemos.com/wp-content/uploads/2016/09/product-furniture-19-4-430x490.jpg',
-
+},
 
 },
 {
@@ -148,10 +158,15 @@ desc:"Scelerisque facilisi rhoncus non faucibus parturient senectus lobortis a u
 price:199,
 hot:false,
 colors:["beige","green","grey"],
+
+images:{ 
 beige:'https://woodmart.xtemos.com/wp-content/uploads/2016/09/product-furniture-3-430x490.jpg'  ,
 green:'https://woodmart.xtemos.com/wp-content/uploads/2016/09/product-furniture-3-2-430x490.jpg',
 grey:'https://woodmart.xtemos.com/wp-content/uploads/2016/09/product-furniture-3-3-430x490.jpg',
+},
 stock:55,
+
+
 
 
 },

@@ -1,0 +1,19 @@
+.old-price{
+
+
+
+}
+
+
+.old-price::after{
+
+content: '';
+position: absolute;
+width: 44px;
+height: 3px;
+background-color: #bbb;
+top:12px;
+right: 33px;
+
+
+}

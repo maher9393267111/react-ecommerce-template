@@ -9,6 +9,7 @@ export const globalSlice = createSlice({
     categoryproducts: [],
     setimage: false,
     opencart: false,
+    color:'',
     category: "ACCESSORIES", /// ACCESSORIES,FEATURED,FURNITURE
   },
   reducers: {
@@ -41,12 +42,19 @@ changeCategory: (state, action) => {
 },
 
 
+colorhandler: (state, action) => {
+
+    state.color = action.payload;
+
+},
+
+
 
 
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { allproductsFetch, filterproducts,changeCategory } = globalSlice.actions;
+export const { allproductsFetch, filterproducts,changeCategory,colorhandler } = globalSlice.actions;
 
 export default globalSlice.reducer;

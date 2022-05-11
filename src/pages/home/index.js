@@ -4,10 +4,14 @@ import { products } from "./data";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import  ProductCard from "../../components/productCard/index";
+import { motion } from "framer-motion";
 import { allproductsFetch, filterproducts,changeCategory } from "../../redux/global";
 const Home = () => {
   const dispatch = useDispatch();
 
+
+
+  
   // redux state
 
   const { category, allproducts, categoryproducts } = useSelector(
@@ -148,6 +152,19 @@ dispatch(changeCategory(catName));
 
 <div className="products-wrapper">
     
+<motion.div
+
+animate={{
+  opacity:    [0, 0.5, 1]  ,
+ 
+//   translateY: isHover ? 0 :-1000,
+  translateX: [-200,-100,0] ,  
+  transition: { duration: 0.7, ease: "easeInOut" },
+  
+  
+}}
+>
+
 
    {/* ------grid products-----  */}
 <div className="grid-products">
@@ -175,6 +192,8 @@ dispatch(changeCategory(catName));
 </div>
 
 
+
+</motion.div>
 
 
 
