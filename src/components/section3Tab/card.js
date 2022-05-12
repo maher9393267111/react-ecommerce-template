@@ -9,7 +9,7 @@ const Card1 = ({product}) => {
 
 const [toggleImage, setToggleImage] = useState(false);
 
-
+const [hchange, setHchange] = useState(false);
 
 
 
@@ -79,28 +79,74 @@ const handleMouseLeave = () => {
 
 <div className='info'>
     
-<div>
+<div  className='text-center bg-green-100  p-[5px]
+font-bold
+pb-[12px]
+
+
+'>
     
     {product.title}
 </div>
 
 
-<div>
+<div className='text-center pt-[10px] font-bold pb-[10px] bg-blue-300'>
     {product.category}
 </div>
 
 {/* ----ozelikler map---- */}
 
 
-<div className='desc'>
+<div className='desc '>
+
+<div className='mb-[10px] text-center font-bold bg-orange-200  pt-[10px] pb-[10px]'>
+    Ozelikler
+</div>
+
+{/* -----wrapp over flow to ozelikler----- */}
     
+<div className={ ` over ${ hchange ? "h-auto z-10" : 'h-[90px] overflow-hidden'} `}>
+    
+
+
 {Object.entries(product.ozelikler).map(([key, val], i) => (
-    <p key={i}>
-        {key}: {val}
-    </p>
+
+
+<div className='flex justify-between first-letter:
+font-bold
+
+'  key={i}>
+<div className='pl-[22px]'>
+    {key} :
+</div>
+
+
+<div className='  pr-[22px]'>
+    {val}
+</div>
+
+    
+</div>
+  
+       
+    
 ))}
 
 
+</div>
+
+{/* -------------- */}
+
+{!hchange && 
+
+<div onClick={()=>setHchange(true)} className='show-more-icon text-center  font-bold '>
+
+
+   icon 
+
+</div>
+
+}
 
 
 </div>
