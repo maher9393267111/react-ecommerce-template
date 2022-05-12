@@ -74,7 +74,7 @@ const ProductCard = ({ product }) => {
           >
             {!color && (
               <img
-                className="h-[100%] hover:scale-50 w-[100%] transition-all duration-400"
+                className="h-[100%] hov hover:scale-75 w-[100%] transition-scale duration-400"
                 src={show ? product.image2 : product.mainimage}
                 alt=""
               />

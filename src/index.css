@@ -17,6 +17,16 @@ code {
     monospace;
 }
 
+.hov{
+transition: all 1s ease; 
+
+}
+
+.hov:hover{
+  transition: all 1s ease; 
+  
+  }
+
 
 
 @layer components {
@@ -27,7 +37,7 @@ code {
   
   .line-hover{
       @apply  hover:border-b-2 border-orange-500
-      transition-all duration-200
+      transition-all duration-700 ease-in-out
       
       
        ;
@@ -39,6 +49,11 @@ code {
       @apply grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4;
   }
 
+  .grid-products-topsellers{
+
+    @apply grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4;
+}
+
 
   .produc-card-wrapper{
 
@@ -46,7 +61,37 @@ code {
 
   }
 
+  .header-text{
 
+
+@apply font-bold transition-all duration-300 pb-[10px] mx-auto w-[333px] text-2xl  hover:border-emerald-500 border-b-4
+
+  }
+
+
+.show-more{
+
+@apply hidden hover:visible 
+
+
+}
+
+
+
+.res-flex{
+
+@apply sm:flex-col font-bold sm:flex bg-blue-300 md:flex-col bg-green-300 lg:flex-row lg:justify-around lg:bg-red-300
+
+
+
+}
+
+.active{
+
+@apply  border-b-4 border-blue-500 pb-[1px]  transition-all duration-300
+
+
+}
 
 
   }

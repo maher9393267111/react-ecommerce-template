@@ -1,3 +1,5 @@
+import Electronics from "../../components/electronics"
+
 export  const  products=[
 
 {
@@ -122,7 +124,7 @@ discount:'25%',
 oldprice:799,
 
 stock:139,
-colors:["black","blue","grey"],
+// colors:["black","blue","grey"],
 
 
 },
@@ -172,6 +174,330 @@ stock:55,
 },
 
 
+
+
+]
+
+
+
+
+// --------Electronics------
+
+
+export const electronics=[
+
+{
+id:1,
+
+name:'nibh hidephone' ,
+
+mainimage:'https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2018/04/white-electronics-product-3-430x425.jpg.webp'    ,
+
+category:'FEATURED2' ,
+
+price:'129'    ,
+
+discount:'' ,
+
+oldprice:'' ,
+
+desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+
+
+
+
+
+},
+
+{
+    id:2,
+    
+    name:'Sodales partur iaculis' ,
+    
+    mainimage:'https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2018/04/white-electronics-product-12-430x425.jpg.webp'    ,
+    
+    category:'FEATURED2' ,
+    
+    price:'309'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:3,
+    
+    name:'Adipiscing porttitor habit' ,
+    
+    mainimage:'https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2018/04/white-electronics-product-4-430x425.jpg.webp'    ,
+    
+    category:'FEATURED2' ,
+    
+    price:'229'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:4,
+    
+    name:'luctus tristique arcu' ,
+    
+    mainimage:'https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2018/04/white-electronics-product-11-430x425.jpg.webp'    ,
+    
+    category:'FEATURED2' ,
+    
+    price:'299'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:5,
+    
+    name:'Adipiscing porttitor habit' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-4-430x425.jpg'    ,
+    
+    category:'ACCESSORIES2' ,
+    
+    price:'333'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:6,
+    
+    name:'Convallis mattis parturient' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-6-430x425.jpg'    ,
+    
+    category:'ACCESSORIES2' ,
+    
+    price:'154'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:7,
+    
+    name:'Condimentum donec turpis' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-2-430x425.jpg'    ,
+    
+    category:'ACCESSORIES2' ,
+    
+    price:'455'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:8,
+    
+    name:'Convallis mattis parturient' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-1-430x425.jpg'     ,
+    
+    category:'ACCESSORIES2' ,
+    
+    price:'199'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:9,
+    
+    name:'luctus tristique arcu' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-11-430x425.jpg'    ,
+    
+    category:'AUDIO' ,
+    
+    price:'555'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:10,
+    
+    name:'Parturient placerat partur' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-accessories-18-430x425.jpg'    ,
+    
+    category:'AUDIO' ,
+    
+    price:'123'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:11,
+    
+    name:'Iaculis convallis vadoni' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-10-430x425.jpg'    ,
+    
+    category:'AUDIO' ,
+    
+    price:'156'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:12,
+    
+    name:'Iaculis convallis varius' ,
+    
+    mainimage:'https://woodmart.xtemos.com/wp-content/uploads/2018/04/white-electronics-product-12-430x425.jpg'    ,
+    
+    category:'AUDIO' ,
+    
+    price:'155'    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:1,
+    
+    name:'' ,
+    
+    mainimage:''    ,
+    
+    category:'' ,
+    
+    price:''    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+{
+    id:1,
+    
+    name:'' ,
+    
+    mainimage:''    ,
+    
+    category:'' ,
+    
+    price:''    ,
+    
+    discount:'' ,
+    
+    oldprice:'' ,
+    
+    desc:'n a fermentum parturient mi faucibus nam vestibulum laoreet convallis mattis parturient cum etiam dapibus egestas non adipiscing porttitor habitasse dapibus a consectetur tincidunt condimentum donec turpis interdum vestibulum. Sed consectetur id suspendisse sem maecenas condimentum scelerisque a proin sem scelerisque ornare hendrerit adipiscing arcu adipiscing ante mollis et suspendisse a. A torquent mi id non vulputate suspendisse lobortis.',
+    
+    
+    
+    
+    
+    },
+    
+    
+    
 
 
 ]
