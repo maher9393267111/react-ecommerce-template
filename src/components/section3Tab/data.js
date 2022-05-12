@@ -199,7 +199,7 @@ ozelikler:{
 id: 8,
 title: ' headphone g98',
 image1: 'https://woodmart.xtemos.com/wp-content/uploads/2017/04/beats2-430x490.jpg',
-image2: 'image.png',
+image2: 'https://z9d7c4u6.rocketcdn.me/wp-content/uploads/2018/04/white-electronics-product-3-430x425.jpg.webp',
 price: '77',
 
 category: 'MOBILE',
@@ -316,34 +316,6 @@ price: '1700',
 
 category: 'SMARTWATCHES',
 color: 'black',
-discount: '',
-oldprice: '',
-
-ozelikler:{
-
-    AppControlled:'yes',
-    FlightTime:'22min',
-    Battery:'3.5V',
-    Weight:'0.5kg',
-    Dimensions:'',
-    megpixel:'12MP',
-
-
-
-
-}    
-
-
-},
-{
-id: 1,
-title: '',
-image1: '',
-image2: '',
-price: '',
-description: '',
-category: '',
-color: '',
 discount: '',
 oldprice: '',
 

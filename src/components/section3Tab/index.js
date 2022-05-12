@@ -18,11 +18,14 @@ const TabSection = () => {
   const [tabs, setTabs] = useState([]);
   const [sliceto, setSliceto] = useState(4);
 
+  const [animate, setAnimate] = useState(false);
+
   // when click page slice from 0 to 4 and set to tabs state
 
   const handlePageChange = () => {
     console.log("clicked----->");
     setToggle(true);
+    setAnimate(!animate);
 
     setPage(page + 4);
 
@@ -71,6 +74,26 @@ const TabSection = () => {
         </span>
       </h1>
 
+{/* ---animate slider---- */}
+
+
+<motion.div
+whileInView={
+{
+    visible: true,
+    opacity: 1,
+    transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+    },
+    x:  animate ? [-200,0] : [-201,0],
+}
+
+
+}
+
+>
+
       <div className="w-[100%] grid  lg:grid-cols-12 sm:grid-cols-6 gap-3  first:ml-4 last:mr-[50px]">
         {  !toggle &&  page === 4 && tab3.slice(0,4).map((product, index) => {
           return <CardComp product={product} />;
@@ -86,6 +109,7 @@ const TabSection = () => {
       </div>
 
 
+      </motion.div>
     
       {/* </div> */}
     </div>
