@@ -12,28 +12,36 @@ import {
 } from "../../redux/global";
 import { data as electronics } from "./data"; // change data name to electronics console.log("electronics",electronics);
 const TabSection = () => {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(4);
   const dispatch = useDispatch();
-  const [tabs, setTabs] = useState(electronics.slice(page, page + 4));
+  const [toggle, setToggle] = useState(false);
+  const [tabs, setTabs] = useState([]);
+  const [sliceto, setSliceto] = useState(4);
 
   // when click page slice from 0 to 4 and set to tabs state
 
   const handlePageChange = () => {
     console.log("clicked----->");
+    setToggle(true);
 
-    setPage(page + 1);
+    setPage(page + 4);
 
     console.log("page", page, page + 4, "-----", electronics.length);
 
     if (page + 4 < electronics.length) {  // still slice to  electronics.length 
+
+        console.log("slice to condition one work man","-----",page ,    page + 4);
       const sliced = electronics.slice(page, page + 4);
       return setTabs(sliced); // all products after sliced
     } else {   // if page + 4 > electronics.length  restart page to 0 and still slice to electronics.length
-      setPage(0);
+      setPage(4);
+      console.log("slice to condition two work man","-----",page ,    page + 4);
 
-      const sliced = electronics.slice(page, page + 4);
+      setToggle(false);
 
-      return setTabs(sliced); // all products after sliced
+    //   const sliced = electronics.slice(page, page + 4);
+
+    //   return setTabs(sliced); // all products after sliced
     }
   };
 
@@ -57,14 +65,28 @@ const TabSection = () => {
       >
         {" "}
         Tabs {tabs3Category} {tabs3Filter.length}{" "}
-        <span className="ml-[20px] bg-green-200">{page}</span>
+        <span className="ml-[20px] bg-green-200">{page} 
+        {!toggle &&  page === 4 && "itis must work maher"}
+        
+        </span>
       </h1>
 
       <div className="w-[100%] grid  lg:grid-cols-12 sm:grid-cols-6 gap-3  first:ml-4 last:mr-[50px]">
-        {tabs.map((product, index) => {
+        {  !toggle &&  page === 4 && tab3.slice(0,4).map((product, index) => {
           return <CardComp product={product} />;
-        })}
+        })} 
+
+
+{  toggle &&  tabs.map((product, index) => {
+          return <CardComp product={product} />;
+        })} 
+     
+
+
       </div>
+
+
+    
       {/* </div> */}
     </div>
   );
