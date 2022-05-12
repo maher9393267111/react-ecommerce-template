@@ -8,3 +8,10 @@ sm:text-yellow-200
 lg:text-red-400 */
 
 
+
+
+.trans{
+
+transition : all 1,8 ease-out
+
+}

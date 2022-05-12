@@ -45,13 +45,13 @@ const Home = () => {
     <div>
       <h1>home page</h1>
 
-      <span
+      {/* <span
         className=" 
             rounded-full
             bg-green-300 mr-[33px]"
       >
         {categoryproducts.length} category products
-      </span>
+      </span> */}
 
       <span className="   rounded-lg   bg-blue-400">
         {allproducts.length} filtered products // category name {category}
